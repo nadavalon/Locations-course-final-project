@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvSetting"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#801515"
+        android:gravity="center"
+        android:text="@string/settings"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/tvdistancetype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/which_distance_type_do_you_prefer_"
+            android:textColor="#202020"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/distancetype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/kilometers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/km"
+                android:textColor="#202020" />
+
+            <RadioButton
+                android:id="@+id/miles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ml"
+                android:textColor="#202020" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/deleteall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_corners_btn"
+        android:padding="6dp"
+        android:text="@string/delete_all_favorites"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="prefs_distance_type_entries">
+        <item>Km</item>
+        <item>Miles</item>
+    </string-array>
+
+</resources>

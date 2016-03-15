@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Preference xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <ListPreference
+            android:defaultValue="Km"
+            android:dialogTitle="Select Distance Type"
+            android:key="type"
+            android:summary="The type of distance"
+            android:title="Distance Type" />
+    <Preference
+        android:key="Delete Favorites"
+        android:summary="Pressing this will delete all your favorite locations"
+        android:title="Delete Favorites" />
+    
+</Preference>

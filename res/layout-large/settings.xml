@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#052240"
+    android:orientation="vertical" >
+ <TextView
+        android:id="@+id/tvSetting"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="#6AFAFA"
+        android:textSize="20sp"
+   		android:textStyle="bold"
+   		android:gravity="center"
+        android:textColor="#000000"
+        android:text="@string/settings" />
+    <Button
+        android:id="@+id/deleteall"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="#ff0000"
+        android:text="@string/delete_all_favorites" />
+
+    <LinearLayout
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+  <TextView
+      android:id="@+id/tvdistancetype"
+      android:layout_width="228dp"
+      android:layout_height="wrap_content"
+      android:text="@string/which_distance_type_do_you_prefer_"
+      android:textColor="#ffffff"
+      android:layout_marginLeft="5dp"
+      android:textSize="20sp" />
+  
+        <RadioGroup
+            android:id="@+id/distancetype"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+<RadioButton
+                android:id="@+id/kilometers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:text="@string/km" />
+
+            <RadioButton
+                android:id="@+id/miles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:text="@string/ml" />
+
+            
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>
